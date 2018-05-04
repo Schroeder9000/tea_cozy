@@ -1,3 +1,4 @@
+/* Universal Declaration */
 html {
   font-family: "helvetica", sans-serif;
   font-size: 22px;
@@ -7,10 +8,15 @@ html {
   text-align: center;
 }
 
+
+
+/* Header */
 .header {
   display: flex;
   position: fixed;
+  top: 0px;
   align-items: center;
+  background-color: black;
   z-index: 5;
   width: 100%;
   height: 69px;
@@ -22,7 +28,6 @@ html {
   align-items: center;
   flex-grow: 1;
   padding-left: 30px;
-  height: 50px;
 }
 
 nav a {
@@ -43,4 +48,120 @@ header nav {
 nav span {
   display: inline-block;
   padding: 20px 10px;
+}
+
+
+/* Content */
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.mission {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 70px;
+}
+
+.hero {
+  height: 700px;
+  width: 1200px;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.hero_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1200px;
+  background-color: black;
+  margin: 0px;
+}
+
+
+/* Tea of the Month */
+.section_two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.tea_month {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 70px;
+  width: 1000px;
+}
+
+.teas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+}
+
+.tea-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 33%
+}
+
+.tea-type img {
+  height: 200px;
+  width: 300px;
+}
+
+.tea-type span {
+  font-weight: bold;
+  padding: 15px;
+}
+
+/* Locations */
+.locations{
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 150px;
+}
+
+.locations h2 {
+  margin-bottom: 10px;
+}
+
+.store {
+  height: 300px;
+  width: 300px;
+  background-color: black;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 20px;
+
+}
+
+.store_section{
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.store p {
+
 }
